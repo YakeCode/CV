@@ -13,10 +13,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* scroll*/
-body::-webkit-scrollbar{
-    width: 0;
-}
 
 body{
     min-height: 100vh;

@@ -1,9 +1,15 @@
 :root{
     --color-scrollbar:#d3d3d4;
-    --color-background-scrollbar:#eee
+    --color-background-scrollbar:#eee;
+    --color-principal:#ffffff;
+    --color-secondary:#04b4e0;
+    --color-background:#f2f7f9;
+    --color-transparent: transparent;
+    --color-icon:#b5b6b7;
+    --color-title:#222222;
+    --color-subtitle:#888;
+    --color-text:#555;
 }
-
-/*scroll moz*/
 
 /*scroll chrome*/
 
@@ -19,6 +25,53 @@
     border-radius: 40px;
 }
 
+.content__page::-webkit-scrollbar-track{
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .content__page:hover::-webkit-scrollbar-thumb{
     box-shadow:inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.content__page:hover::-webkit-scrollbar-thumb:hover{
+    border: 7px solid transparent;
+    box-shadow:inset 0 0 0 10px  var(--color-secondary);
+}
+
+
+/*scroll moz*/
+/*.content__page{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) transparent;
+}*/
+
+/* bar aside*/
+
+.layout__aside::-webkit-scrollbar{
+    width: 25px;
+    background: var(--color-secondary);
+
+}
+
+.layout__aside::-webkit-scrollbar-thumb{
+    border: 10px solid transparent ;
+    box-shadow:none ;
+    border-radius: 40px;
+}
+
+.layout__aside::-webkit-scrollbar-track{
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb{
+    box-shadow:inset 0 0 0 10px var(--color-principal);
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb:hover{
+    border: 8px solid transparent;
+    box-shadow:inset 0 0 0 10px  var(--color-principal);
 }
